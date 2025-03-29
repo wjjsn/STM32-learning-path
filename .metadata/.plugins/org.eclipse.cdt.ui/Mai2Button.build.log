@@ -1,0 +1,36 @@
+23:14:31 **** Incremental Build of configuration Debug for project Mai2Button ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/LED.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LED.d" -MT"Core/Src/LED.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LED.o"
+../Core/Src/LED.c: In function 'setLedGs8BitMultiFade':
+../Core/Src/LED.c:144:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  144 |         if (r_current < 0) r_current = 0;if (r_current > 255) r_current = 255;
+      |         ^~
+../Core/Src/LED.c:144:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  144 |         if (r_current < 0) r_current = 0;if (r_current > 255) r_current = 255;
+      |                                          ^~
+../Core/Src/LED.c:145:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  145 |         if (g_current < 0) g_current = 0;if (g_current > 255) g_current = 255;
+      |         ^~
+../Core/Src/LED.c:145:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  145 |         if (g_current < 0) g_current = 0;if (g_current > 255) g_current = 255;
+      |                                          ^~
+../Core/Src/LED.c:146:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  146 |         if (b_current < 0) b_current = 0;if (b_current > 255) b_current = 255;
+      |         ^~
+../Core/Src/LED.c:146:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  146 |         if (b_current < 0) b_current = 0;if (b_current > 255) b_current = 255;
+      |                                          ^~
+arm-none-eabi-gcc -o "Mai2Button.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\28584\workspace\Mai2Button\STM32G431CBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Mai2Button.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+已结束构建目标： Mai2Button.elf
+ 
+arm-none-eabi-size  Mai2Button.elf 
+arm-none-eabi-objdump -h -S Mai2Button.elf  > "Mai2Button.list"
+   text	   data	    bss	    dec	    hex	filename
+  32544	    388	   6204	  39136	   98e0	Mai2Button.elf
+已结束构建： default.size.stdout
+ 
+已结束构建： Mai2Button.list
+ 
+
+23:14:33 Build Finished. 0 errors, 3 warnings. (took 1s.358ms)
+

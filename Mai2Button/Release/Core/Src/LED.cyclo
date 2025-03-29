@@ -1,0 +1,12 @@
+../Core/Src/LED.c:19:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/LED.c:45:6:setLedGs8Bit	5
+../Core/Src/LED.c:76:6:setLedGs8BitMulti	6
+../Core/Src/LED.c:113:6:setLedGs8BitMultiFade	1
+../Core/Src/LED.c:170:6:setLedFet	1
+../Core/Src/LED.c:177:6:SetLedGsUpdate	1
+../Core/Src/LED.c:183:6:GetEEPRom	1
+../Core/Src/LED.c:189:6:getBoardInfo	1
+../Core/Src/LED.c:195:6:getBoardStatus	1
+../Core/Src/LED.c:201:6:getProtocolVersion	1
+../Core/Src/LED.c:207:6:default_REP	1
+../Core/Src/LED.c:28:6:copeLED	13

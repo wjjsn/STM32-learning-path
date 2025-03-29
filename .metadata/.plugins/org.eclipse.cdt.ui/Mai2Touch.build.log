@@ -1,0 +1,339 @@
+13:56:32 **** 构建 of configuration Debug for project Mai2Touch ****
+make -j16 all 
+arm-none-eabi-gcc "../USB_Device/Target/usbd_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_Device/Target/usbd_conf.d" -MT"USB_Device/Target/usbd_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_Device/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_Device/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_Device/App/usb_device.d" -MT"USB_Device/App/usb_device.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_Device/App/usb_device.o"
+arm-none-eabi-gcc "../USB_Device/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_Device/App/usbd_cdc_if.d" -MT"USB_Device/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_Device/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../USB_Device/App/usbd_desc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"USB_Device/App/usbd_desc.d" -MT"USB_Device/App/usbd_desc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_Device/App/usbd_desc.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.o"
+../USB_Device/App/usbd_cdc_if.c: In function 'CDC_Receive_FS':
+../USB_Device/App/usbd_cdc_if.c:264:9: warning: implicit declaration of function 'RecCope' [-Wimplicit-function-declaration]
+  264 |         RecCope(Buf);//可以使用mcmcpy函数将Buf内容复制到其他数组中
+      |         ^~~~~~~
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.d" -MT"Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32g431cbux.d" -MT"Core/Startup/startup_stm32g431cbux.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32g431cbux.o" "../Core/Startup/startup_stm32g431cbux.s"
+arm-none-eabi-gcc "../Core/Src/RecCope.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/RecCope.d" -MT"Core/Src/RecCope.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/RecCope.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/RecCope.c: In function 'RecCope':
+../Core/Src/RecCope.c:17:19: warning: implicit declaration of function 'reset' [-Wimplicit-function-declaration]
+   17 |         case 0x45:reset();break;//Reset初始化指令，无需回复
+      |                   ^~~~~
+../Core/Src/RecCope.c:19:19: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+   19 |         case 0x72:CDC_Transmit_FS(replydata, 6);break;//Set Touch Panel Ratio设置 Ratio
+      |                   ^~~~~~~~~~~~~~~
+../Core/Src/RecCope.c: At top level:
+../Core/Src/RecCope.c:25:6: warning: conflicting types for 'reset'; have 'void()'
+   25 | void reset()
+      |      ^~~~~
+../Core/Src/RecCope.c:17:19: note: previous implicit declaration of 'reset' with type 'void()'
+   17 |         case 0x45:reset();break;//Reset初始化指令，无需回复
+      |                   ^~~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32g4xx.d" -MT"Core/Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32g4xx.o"
+arm-none-eabi-gcc "../Core/Src/touch.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -I../USB_Device/App -I../USB_Device/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/touch.d" -MT"Core/Src/touch.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/touch.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:26: warning: implicit declaration of function 'SendTouchData'; did you mean 'SendTouchDta'? [-Wimplicit-function-declaration]
+  102 |                   case 1:SendTouchData();break;
+      |                          ^~~~~~~~~~~~~
+      |                          SendTouchDta
+../Core/Src/touch.c: In function 'ReadTouchData':
+../Core/Src/touch.c:18:50: warning: comparison between 'GPIO_PinState' and 'enum <anonymous>' [-Wenum-compare]
+   18 |         if(HAL_GPIO_ReadPin(A1_GPIO_Port, A1_Pin)==SET){touchdata[1]=touchdata[1]|0x01;}else{touchdata[1]=touchdata[1]&0xFE;}//A1
+      |                                                  ^~
+../Core/Src/touch.c:19:29: error: 'A2_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   19 |         if(HAL_GPIO_ReadPin(A2_GPIO_Port, A2_Pin)==SET){touchdata[1]=touchdata[1]|0x02;}else{touchdata[1]=touchdata[1]&0xFD;}//A2
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:19:29: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/touch.c:19:43: error: 'A2_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   19 |         if(HAL_GPIO_ReadPin(A2_GPIO_Port, A2_Pin)==SET){touchdata[1]=touchdata[1]|0x02;}else{touchdata[1]=touchdata[1]&0xFD;}//A2
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:20:29: error: 'A3_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   20 |         if(HAL_GPIO_ReadPin(A3_GPIO_Port, A3_Pin)==SET){touchdata[1]=touchdata[1]|0x04;}else{touchdata[1]=touchdata[1]&0xFB;}//A3
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:20:43: error: 'A3_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   20 |         if(HAL_GPIO_ReadPin(A3_GPIO_Port, A3_Pin)==SET){touchdata[1]=touchdata[1]|0x04;}else{touchdata[1]=touchdata[1]&0xFB;}//A3
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:21:29: error: 'A4_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   21 |         if(HAL_GPIO_ReadPin(A4_GPIO_Port, A4_Pin)==SET){touchdata[1]=touchdata[1]|0x08;}else{touchdata[1]=touchdata[1]&0xF7;}//A4
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:21:43: error: 'A4_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   21 |         if(HAL_GPIO_ReadPin(A4_GPIO_Port, A4_Pin)==SET){touchdata[1]=touchdata[1]|0x08;}else{touchdata[1]=touchdata[1]&0xF7;}//A4
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:22:29: error: 'A5_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   22 |         if(HAL_GPIO_ReadPin(A5_GPIO_Port, A5_Pin)==SET){touchdata[1]=touchdata[1]|0x10;}else{touchdata[1]=touchdata[1]&0xEF;}//A5
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:22:43: error: 'A5_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   22 |         if(HAL_GPIO_ReadPin(A5_GPIO_Port, A5_Pin)==SET){touchdata[1]=touchdata[1]|0x10;}else{touchdata[1]=touchdata[1]&0xEF;}//A5
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:23:29: error: 'A6_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   23 |         if(HAL_GPIO_ReadPin(A6_GPIO_Port, A6_Pin)==SET){touchdata[2]=touchdata[2]|0x01;}else{touchdata[2]=touchdata[2]&0xFE;}//A6
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:23:43: error: 'A6_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   23 |         if(HAL_GPIO_ReadPin(A6_GPIO_Port, A6_Pin)==SET){touchdata[2]=touchdata[2]|0x01;}else{touchdata[2]=touchdata[2]&0xFE;}//A6
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:24:29: error: 'A7_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   24 |         if(HAL_GPIO_ReadPin(A7_GPIO_Port, A7_Pin)==SET){touchdata[2]=touchdata[2]|0x02;}else{touchdata[2]=touchdata[2]&0xFD;}//A7
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:24:43: error: 'A7_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   24 |         if(HAL_GPIO_ReadPin(A7_GPIO_Port, A7_Pin)==SET){touchdata[2]=touchdata[2]|0x02;}else{touchdata[2]=touchdata[2]&0xFD;}//A7
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:25:29: error: 'A8_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   25 |         if(HAL_GPIO_ReadPin(A8_GPIO_Port, A8_Pin)==SET){touchdata[2]=touchdata[2]|0x04;}else{touchdata[2]=touchdata[2]&0xFB;}//A8
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:25:43: error: 'A8_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   25 |         if(HAL_GPIO_ReadPin(A8_GPIO_Port, A8_Pin)==SET){touchdata[2]=touchdata[2]|0x04;}else{touchdata[2]=touchdata[2]&0xFB;}//A8
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:26:29: error: 'B1_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   26 |         if(HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin)==SET){touchdata[2]=touchdata[2]|0x08;}else{touchdata[2]=touchdata[2]&0xF7;}//B1
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:26:43: error: 'B1_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   26 |         if(HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin)==SET){touchdata[2]=touchdata[2]|0x08;}else{touchdata[2]=touchdata[2]&0xF7;}//B1
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:27:29: error: 'B2_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   27 |         if(HAL_GPIO_ReadPin(B2_GPIO_Port, B2_Pin)==SET){touchdata[2]=touchdata[2]|0x10;}else{touchdata[2]=touchdata[2]&0xEF;}//B2
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:27:43: error: 'B2_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   27 |         if(HAL_GPIO_ReadPin(B2_GPIO_Port, B2_Pin)==SET){touchdata[2]=touchdata[2]|0x10;}else{touchdata[2]=touchdata[2]&0xEF;}//B2
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:28:29: error: 'B3_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   28 |         if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)==SET){touchdata[3]=touchdata[3]|0x01;}else{touchdata[3]=touchdata[3]&0xFE;}//B3
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:28:43: error: 'B3_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   28 |         if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)==SET){touchdata[3]=touchdata[3]|0x01;}else{touchdata[3]=touchdata[3]&0xFE;}//B3
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:29:29: error: 'B4_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   29 |         if(HAL_GPIO_ReadPin(B4_GPIO_Port, B4_Pin)==SET){touchdata[3]=touchdata[3]|0x02;}else{touchdata[3]=touchdata[3]&0xFD;}//B4
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:29:43: error: 'B4_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   29 |         if(HAL_GPIO_ReadPin(B4_GPIO_Port, B4_Pin)==SET){touchdata[3]=touchdata[3]|0x02;}else{touchdata[3]=touchdata[3]&0xFD;}//B4
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:30:29: error: 'B5_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   30 |         if(HAL_GPIO_ReadPin(B5_GPIO_Port, B5_Pin)==SET){touchdata[3]=touchdata[3]|0x04;}else{touchdata[3]=touchdata[3]&0xFB;}//B5
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:30:43: error: 'B5_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   30 |         if(HAL_GPIO_ReadPin(B5_GPIO_Port, B5_Pin)==SET){touchdata[3]=touchdata[3]|0x04;}else{touchdata[3]=touchdata[3]&0xFB;}//B5
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:31:29: error: 'B6_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   31 |         if(HAL_GPIO_ReadPin(B6_GPIO_Port, B6_Pin)==SET){touchdata[3]=touchdata[3]|0x08;}else{touchdata[3]=touchdata[3]&0xF7;}//B6
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:31:43: error: 'B6_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   31 |         if(HAL_GPIO_ReadPin(B6_GPIO_Port, B6_Pin)==SET){touchdata[3]=touchdata[3]|0x08;}else{touchdata[3]=touchdata[3]&0xF7;}//B6
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:32:29: error: 'B7_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   32 |         if(HAL_GPIO_ReadPin(B7_GPIO_Port, B7_Pin)==SET){touchdata[3]=touchdata[3]|0x10;}else{touchdata[3]=touchdata[3]&0xEF;}//B7
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:32:43: error: 'B7_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   32 |         if(HAL_GPIO_ReadPin(B7_GPIO_Port, B7_Pin)==SET){touchdata[3]=touchdata[3]|0x10;}else{touchdata[3]=touchdata[3]&0xEF;}//B7
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:33:29: error: 'B8_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   33 |         if(HAL_GPIO_ReadPin(B8_GPIO_Port, B8_Pin)==SET){touchdata[4]=touchdata[4]|0x01;}else{touchdata[4]=touchdata[4]&0xFE;}//B8
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:33:43: error: 'B8_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   33 |         if(HAL_GPIO_ReadPin(B8_GPIO_Port, B8_Pin)==SET){touchdata[4]=touchdata[4]|0x01;}else{touchdata[4]=touchdata[4]&0xFE;}//B8
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:34:29: error: 'C1_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   34 |         if(HAL_GPIO_ReadPin(C1_GPIO_Port, C1_Pin)==SET){touchdata[4]=touchdata[4]|0x02;}else{touchdata[4]=touchdata[4]&0xFD;}//C1
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:34:43: error: 'C1_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   34 |         if(HAL_GPIO_ReadPin(C1_GPIO_Port, C1_Pin)==SET){touchdata[4]=touchdata[4]|0x02;}else{touchdata[4]=touchdata[4]&0xFD;}//C1
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:35:29: error: 'C2_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   35 |         if(HAL_GPIO_ReadPin(C2_GPIO_Port, C2_Pin)==SET){touchdata[4]=touchdata[4]|0x04;}else{touchdata[4]=touchdata[4]&0xFB;}//C2
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:35:43: error: 'C2_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   35 |         if(HAL_GPIO_ReadPin(C2_GPIO_Port, C2_Pin)==SET){touchdata[4]=touchdata[4]|0x04;}else{touchdata[4]=touchdata[4]&0xFB;}//C2
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:36:29: error: 'D1_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   36 |         if(HAL_GPIO_ReadPin(D1_GPIO_Port, D1_Pin)==SET){touchdata[4]=touchdata[4]|0x08;}else{touchdata[4]=touchdata[4]&0xF7;}//D1
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:36:43: error: 'D1_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   36 |         if(HAL_GPIO_ReadPin(D1_GPIO_Port, D1_Pin)==SET){touchdata[4]=touchdata[4]|0x08;}else{touchdata[4]=touchdata[4]&0xF7;}//D1
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:37:29: error: 'D2_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   37 |         if(HAL_GPIO_ReadPin(D2_GPIO_Port, D2_Pin)==SET){touchdata[4]=touchdata[4]|0x10;}else{touchdata[4]=touchdata[4]&0xEF;}//D2
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:37:43: error: 'D2_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   37 |         if(HAL_GPIO_ReadPin(D2_GPIO_Port, D2_Pin)==SET){touchdata[4]=touchdata[4]|0x10;}else{touchdata[4]=touchdata[4]&0xEF;}//D2
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:38:29: error: 'D3_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   38 |         if(HAL_GPIO_ReadPin(D3_GPIO_Port, D3_Pin)==SET){touchdata[5]=touchdata[5]|0x01;}else{touchdata[5]=touchdata[5]&0xFE;}//D3
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:38:43: error: 'D3_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   38 |         if(HAL_GPIO_ReadPin(D3_GPIO_Port, D3_Pin)==SET){touchdata[5]=touchdata[5]|0x01;}else{touchdata[5]=touchdata[5]&0xFE;}//D3
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:39:29: error: 'D4_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   39 |         if(HAL_GPIO_ReadPin(D4_GPIO_Port, D4_Pin)==SET){touchdata[5]=touchdata[5]|0x02;}else{touchdata[5]=touchdata[5]&0xFD;}//D4
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:39:43: error: 'D4_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   39 |         if(HAL_GPIO_ReadPin(D4_GPIO_Port, D4_Pin)==SET){touchdata[5]=touchdata[5]|0x02;}else{touchdata[5]=touchdata[5]&0xFD;}//D4
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:40:29: error: 'D5_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   40 |         if(HAL_GPIO_ReadPin(D5_GPIO_Port, D5_Pin)==SET){touchdata[5]=touchdata[5]|0x04;}else{touchdata[5]=touchdata[5]&0xFB;}//D5
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:40:43: error: 'D5_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   40 |         if(HAL_GPIO_ReadPin(D5_GPIO_Port, D5_Pin)==SET){touchdata[5]=touchdata[5]|0x04;}else{touchdata[5]=touchdata[5]&0xFB;}//D5
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:41:29: error: 'D6_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   41 |         if(HAL_GPIO_ReadPin(D6_GPIO_Port, D6_Pin)==SET){touchdata[5]=touchdata[5]|0x08;}else{touchdata[5]=touchdata[5]&0xF7;}//D6
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:41:43: error: 'D6_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   41 |         if(HAL_GPIO_ReadPin(D6_GPIO_Port, D6_Pin)==SET){touchdata[5]=touchdata[5]|0x08;}else{touchdata[5]=touchdata[5]&0xF7;}//D6
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:42:29: error: 'D7_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   42 |         if(HAL_GPIO_ReadPin(D7_GPIO_Port, D7_Pin)==SET){touchdata[5]=touchdata[5]|0x10;}else{touchdata[5]=touchdata[5]&0xEF;}//D7
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:42:43: error: 'D7_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   42 |         if(HAL_GPIO_ReadPin(D7_GPIO_Port, D7_Pin)==SET){touchdata[5]=touchdata[5]|0x10;}else{touchdata[5]=touchdata[5]&0xEF;}//D7
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:43:29: error: 'D8_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   43 |         if(HAL_GPIO_ReadPin(D8_GPIO_Port, D8_Pin)==SET){touchdata[6]=touchdata[6]|0x01;}else{touchdata[6]=touchdata[6]&0xFE;}//D8
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:43:43: error: 'D8_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   43 |         if(HAL_GPIO_ReadPin(D8_GPIO_Port, D8_Pin)==SET){touchdata[6]=touchdata[6]|0x01;}else{touchdata[6]=touchdata[6]&0xFE;}//D8
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:44:29: error: 'E1_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   44 |         if(HAL_GPIO_ReadPin(E1_GPIO_Port, E1_Pin)==SET){touchdata[6]=touchdata[6]|0x02;}else{touchdata[6]=touchdata[6]&0xFD;}//E1
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:44:43: error: 'E1_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   44 |         if(HAL_GPIO_ReadPin(E1_GPIO_Port, E1_Pin)==SET){touchdata[6]=touchdata[6]|0x02;}else{touchdata[6]=touchdata[6]&0xFD;}//E1
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:45:29: error: 'E2_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   45 |         if(HAL_GPIO_ReadPin(E2_GPIO_Port, E2_Pin)==SET){touchdata[6]=touchdata[6]|0x04;}else{touchdata[6]=touchdata[6]&0xFB;}//E2
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:45:43: error: 'E2_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   45 |         if(HAL_GPIO_ReadPin(E2_GPIO_Port, E2_Pin)==SET){touchdata[6]=touchdata[6]|0x04;}else{touchdata[6]=touchdata[6]&0xFB;}//E2
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:46:29: error: 'E3_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   46 |         if(HAL_GPIO_ReadPin(E3_GPIO_Port, E3_Pin)==SET){touchdata[6]=touchdata[6]|0x08;}else{touchdata[6]=touchdata[6]&0xF7;}//E3
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:46:43: error: 'E3_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   46 |         if(HAL_GPIO_ReadPin(E3_GPIO_Port, E3_Pin)==SET){touchdata[6]=touchdata[6]|0x08;}else{touchdata[6]=touchdata[6]&0xF7;}//E3
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:47:29: error: 'E4_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   47 |         if(HAL_GPIO_ReadPin(E4_GPIO_Port, E4_Pin)==SET){touchdata[6]=touchdata[6]|0x10;}else{touchdata[6]=touchdata[6]&0xEF;}//E4
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:47:43: error: 'E4_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   47 |         if(HAL_GPIO_ReadPin(E4_GPIO_Port, E4_Pin)==SET){touchdata[6]=touchdata[6]|0x10;}else{touchdata[6]=touchdata[6]&0xEF;}//E4
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:48:29: error: 'E5_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   48 |         if(HAL_GPIO_ReadPin(E5_GPIO_Port, E5_Pin)==SET){touchdata[7]=touchdata[7]|0x01;}else{touchdata[7]=touchdata[7]&0xFE;}//E5
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:48:43: error: 'E5_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   48 |         if(HAL_GPIO_ReadPin(E5_GPIO_Port, E5_Pin)==SET){touchdata[7]=touchdata[7]|0x01;}else{touchdata[7]=touchdata[7]&0xFE;}//E5
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:49:29: error: 'E6_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   49 |         if(HAL_GPIO_ReadPin(E6_GPIO_Port, E6_Pin)==SET){touchdata[7]=touchdata[7]|0x02;}else{touchdata[7]=touchdata[7]&0xFD;}//E6
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:49:43: error: 'E6_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   49 |         if(HAL_GPIO_ReadPin(E6_GPIO_Port, E6_Pin)==SET){touchdata[7]=touchdata[7]|0x02;}else{touchdata[7]=touchdata[7]&0xFD;}//E6
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:50:29: error: 'E7_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   50 |         if(HAL_GPIO_ReadPin(E7_GPIO_Port, E7_Pin)==SET){touchdata[7]=touchdata[7]|0x04;}else{touchdata[7]=touchdata[7]&0xFB;}//E7
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:50:43: error: 'E7_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   50 |         if(HAL_GPIO_ReadPin(E7_GPIO_Port, E7_Pin)==SET){touchdata[7]=touchdata[7]|0x04;}else{touchdata[7]=touchdata[7]&0xFB;}//E7
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c:51:29: error: 'E8_GPIO_Port' undeclared (first use in this function); did you mean 'A1_GPIO_Port'?
+   51 |         if(HAL_GPIO_ReadPin(E8_GPIO_Port, E8_Pin)==SET){touchdata[7]=touchdata[7]|0x08;}else{touchdata[7]=touchdata[7]&0xF7;}//E8
+      |                             ^~~~~~~~~~~~
+      |                             A1_GPIO_Port
+../Core/Src/touch.c:51:43: error: 'E8_Pin' undeclared (first use in this function); did you mean 'A1_Pin'?
+   51 |         if(HAL_GPIO_ReadPin(E8_GPIO_Port, E8_Pin)==SET){touchdata[7]=touchdata[7]|0x08;}else{touchdata[7]=touchdata[7]&0xF7;}//E8
+      |                                           ^~~~~~
+      |                                           A1_Pin
+../Core/Src/touch.c: In function 'SendTouchData':
+../Core/Src/touch.c:57:9: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+   57 |         CDC_Transmit_FS(touchdata,  sizeof(touchdata));
+      |         ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/touch.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+13:56:34 Build Failed. 67 errors, 7 warnings. (took 2s.139ms)
+

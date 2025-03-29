@@ -1,0 +1,6 @@
+../Core/Src/User/ws2812.c:13:6:ws2812Updata	16	static
+../Core/Src/User/ws2812.c:24:6:initColorTable	16	static
+../Core/Src/User/ws2812.c:34:6:ws2812SetOneLED	64	static
+../Core/Src/User/ws2812.c:50:6:ws2812SetMultipleLED	24	static
+../Core/Src/User/ws2812.c:58:10:hsv2rgb	32	static
+../Core/Src/User/ws2812.c:90:6:rainbowFlowOptimized	24	static

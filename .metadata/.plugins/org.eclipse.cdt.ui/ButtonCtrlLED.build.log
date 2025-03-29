@@ -1,0 +1,10 @@
+21:04:11 **** 构建 of configuration Debug for project ButtonCtrlLED ****
+make -j4 all 
+arm-none-eabi-size  ButtonCtrlLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4768	     20	   1572	   6360	   18d8	ButtonCtrlLED.elf
+已结束构建： default.size.stdout
+ 
+
+21:04:12 Build Finished. 0 errors, 0 warnings. (took 873ms)
+

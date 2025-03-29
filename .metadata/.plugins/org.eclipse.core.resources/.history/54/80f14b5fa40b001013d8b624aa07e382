@@ -1,0 +1,13 @@
+/*
+ * motor.c
+ *
+ *  Created on: Mar 28, 2025
+ *      Author: 28584
+ */
+
+#include "motor.h"
+
+void motorSet(uint8_t motor, uint8_t dir, uint8_t speed)
+{
+
+}

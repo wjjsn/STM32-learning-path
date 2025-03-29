@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“WS2812/Core/Src/User/WS2812.c”重命名为“ws2812.c”" description="重命名资源“WS2812.c”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/User/WS2812.c" name="ws2812.c" stamp="1740543250150" updateReferences="true"/>
+</session>

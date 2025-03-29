@@ -1,0 +1,25 @@
+/*
+ * menu.h
+ *
+ *  Created on: Mar 23, 2025
+ *      Author: 28584
+ */
+
+#ifndef INC_MENU_H_
+#define INC_MENU_H_
+
+#include "OLED.h"
+
+typedef struct layerProperty
+{
+	uint8_t layerSubMeunNUM;
+	menuFramework* fathermenu;
+};
+
+typedef struct menuFramework
+{
+	char displaystring[15];
+	menuFramework* childmenu;
+};
+
+#endif /* INC_MENU_H_ */

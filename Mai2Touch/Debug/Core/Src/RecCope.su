@@ -1,0 +1,4 @@
+../Core/Src/RecCope.c:11:6:RecCope	32	static
+../Core/Src/RecCope.c:25:6:reset	4	static
+../Core/Src/RecCope.c:30:6:set_Ratio	4	static
+../Core/Src/RecCope.c:35:6:set_Sensitivity	4	static

@@ -1,0 +1,10 @@
+21:04:14 **** 构建 of configuration Debug for project DetectTesr ****
+make -j4 all 
+arm-none-eabi-size  DetectTesr.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4632	     20	   1572	   6224	   1850	DetectTesr.elf
+已结束构建： default.size.stdout
+ 
+
+21:04:15 Build Finished. 0 errors, 0 warnings. (took 583ms)
+

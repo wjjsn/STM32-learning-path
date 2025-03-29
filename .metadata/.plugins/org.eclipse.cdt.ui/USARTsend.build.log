@@ -1,0 +1,10 @@
+17:03:46 **** 构建 of configuration Debug for project USARTsend ****
+make -j16 all 
+arm-none-eabi-size  USARTsend.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6064	     20	   1644	   7728	   1e30	USARTsend.elf
+已结束构建： default.size.stdout
+ 
+
+17:03:47 Build Finished. 0 errors, 0 warnings. (took 1s.285ms)
+

@@ -1,0 +1,22 @@
+13:20:50 **** Incremental Build of configuration Debug for project USB_try ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+  116 |           CDC_Transmit_FS(&combinedData,6);
+      |           ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "USB_try.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Administrator\Documents\STM32Project\USB_try\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_try.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: USB_try.elf has a LOAD segment with RWX permissions
+已结束构建目标： USB_try.elf
+ 
+arm-none-eabi-size  USB_try.elf 
+arm-none-eabi-objdump -h -S USB_try.elf  > "USB_try.list"
+   text	   data	    bss	    dec	    hex	filename
+  29684	    388	   6068	  36140	   8d2c	USB_try.elf
+已结束构建： default.size.stdout
+ 
+已结束构建： USB_try.list
+ 
+
+13:20:51 Build Finished. 0 errors, 2 warnings. (took 1s.571ms)
+

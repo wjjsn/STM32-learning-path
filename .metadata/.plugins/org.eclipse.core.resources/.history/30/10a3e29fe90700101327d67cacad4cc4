@@ -1,0 +1,65 @@
+/*
+ * menu.c
+ *
+ *  Created on: Mar 23, 2025
+ *      Author: 28584
+ */
+
+#include "menu.h"
+
+layerPropertyFramework mainUIProperty = {4};
+menuFramework mainUI[mainUIProperty.layerSubMeunNUM] =
+{
+	{
+		.displaystring = "Menu",
+		.fathermenu = NULL,
+		.childmenu = &Menu
+	},
+	{
+		.displaystring = "Other",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+	{
+		.displaystring = "Other",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+	{
+		.displaystring = "Other",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+};
+
+layerPropertyFramework MenuProperty = {4};
+menuFramework Menu[MenuProperty.layerSubMeunNUM] =
+{
+	{
+		.layerProperty = MenuProperty,
+		.displaystring = "返回",
+		.fathermenu = &mainUI,
+		.childmenu = NULL
+	},
+	{
+		.layerProperty = MenuProperty,
+		.displaystring = "MPU6050",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+	{
+		.layerProperty = MenuProperty,
+		.displaystring = "mpr121",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+	{
+		.layerProperty = MenuProperty,
+		.displaystring = "ws2812",
+		.fathermenu = NULL,
+		.childmenu = NULL
+	},
+};
+
+
+

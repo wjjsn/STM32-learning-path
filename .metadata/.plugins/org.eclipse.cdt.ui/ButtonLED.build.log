@@ -1,0 +1,10 @@
+21:04:13 **** 构建 of configuration Debug for project ButtonLED ****
+make -j4 all 
+arm-none-eabi-size  ButtonLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4764	     20	   1572	   6356	   18d4	ButtonLED.elf
+已结束构建： default.size.stdout
+ 
+
+21:04:13 Build Finished. 0 errors, 0 warnings. (took 584ms)
+

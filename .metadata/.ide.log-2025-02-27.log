@@ -1,0 +1,25 @@
+2025-02-27 17:31:59,731 [INFO] Activator:176 - 
+
+
+2025-02-27 17:31:59,739 [INFO] Activator:177 - !SESSION log4j initialized
+2025-02-27 17:32:00,410 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: CodeAssistConfigurationBlock_matchSubstring_label in: org.eclipse.jdt.internal.ui.preferences.PreferencesMessages
+2025-02-27 17:32:00,449 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: ProblemMarkerManager_problem_marker_update_job_description in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,453 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: FilteredTypesSelectionDialog_default_package in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,456 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: FilteredTypeSelectionDialog_showContainerForDuplicatesAction in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,460 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_anonym in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,463 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_concat_string in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,465 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_comma_string in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,468 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_declseparator_string in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,474 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_category_separator_string in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:00,476 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: JavaElementLabels_import_container in: org.eclipse.jdt.internal.ui.JavaUIMessages
+2025-02-27 17:32:01,146 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: FileDocumentProvider_getPersistedEncoding in: org.eclipse.ui.editors.text.TextEditorMessages
+2025-02-27 17:32:04,636 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: TextSearchVisitor_progress_updating_job in: org.eclipse.search.internal.ui.SearchMessages
+2025-02-27 17:32:04,640 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Warning: NLS unused message: SearchPageSelectionDialog_rememberLastUsedPage_message in: org.eclipse.search.internal.ui.SearchMessages
+2025-02-27 17:32:07,626 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-02-27 17:32:10,969 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809
+2025-02-27 17:32:10,992 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\/mcu/
+2025-02-27 17:32:10,992 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\/plugins/boardmanager/
+2025-02-27 17:32:10,993 [WARN] ApiDb:259 - Overriding images path with different value:  => C:\ST\STM32CubeIDE\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\/plugins/mcufinder/images/
+2025-02-27 17:32:11,006 [INFO] ApiDb:250 - Set database path to: C:\Users\28584\.stmcufinder\plugins\mcufinder//mcu/
+2025-02-27 17:32:11,008 [INFO] DbMcusAds:125 - Set database path to: C:\Users\28584\.stmcufinder\plugins\mcufinder//mcu/
+2025-02-27 17:32:11,012 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\28584\.stmcufinder\plugins\mcufinder//mcu/cs/

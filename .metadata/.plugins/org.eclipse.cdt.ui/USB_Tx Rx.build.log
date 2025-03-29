@@ -1,0 +1,35 @@
+19:01:17 **** Incremental Build of configuration Debug for project USB_Tx Rx ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/touch.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/touch.d" -MT"Core/Src/touch.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/touch.o"
+../Core/Src/touch.c: In function 'ReadTouchData':
+../Core/Src/touch.c:16:47: warning: comparison between 'GPIO_PinState' and 'enum <anonymous>' [-Wenum-compare]
+   16 |         if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_6)==SET){touchdata[1]=touchdata[1]|0x01;}else{touchdata[1]=touchdata[1]&0xFE;}
+      |                                               ^~
+../Core/Src/touch.c:17:47: warning: comparison between 'GPIO_PinState' and 'enum <anonymous>' [-Wenum-compare]
+   17 |         if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_7)==SET){touchdata[1]=touchdata[1]|0x02;}else{touchdata[1]=touchdata[1]&0xFD;}
+      |                                               ^~
+../Core/Src/touch.c:18:47: warning: comparison between 'GPIO_PinState' and 'enum <anonymous>' [-Wenum-compare]
+   18 |         if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_8)==SET){touchdata[1]=touchdata[1]|0x04;}else{touchdata[1]=touchdata[1]&0xFB;}
+      |                                               ^~
+../Core/Src/touch.c:19:47: warning: comparison between 'GPIO_PinState' and 'enum <anonymous>' [-Wenum-compare]
+   19 |         if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_9)==SET){touchdata[1]=touchdata[1]|0x08;}else{touchdata[1]=touchdata[1]&0xF7;}
+      |                                               ^~
+../Core/Src/touch.c: In function 'SendTouchData':
+../Core/Src/touch.c:26:9: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+   26 |         CDC_Transmit_FS(touchdata,  sizeof(touchdata));
+      |         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "USB_Tx Rx.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Administrator\Documents\STM32Project\USB_Tx Rx\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_Tx Rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: USB_Tx Rx.elf has a LOAD segment with RWX permissions
+已结束构建目标： USB_Tx Rx.elf
+ 
+arm-none-eabi-size  USB_Tx\ Rx.elf 
+arm-none-eabi-objdump -h -S USB_Tx\ Rx.elf  > "USB_Tx Rx.list"
+   text	   data	    bss	    dec	    hex	filename
+  30640	    400	   6120	  37160	   9128	USB_Tx Rx.elf
+已结束构建： default.size.stdout
+ 
+已结束构建： USB_Tx Rx.list
+ 
+
+19:01:20 Build Finished. 0 errors, 6 warnings. (took 3s.10ms)
+

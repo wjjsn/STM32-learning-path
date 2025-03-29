@@ -1,0 +1,6 @@
+2024-12-14 00:00:03,030 [INFO] LoadLocalFilesThread:304 - End of Local Load Thread
+2024-12-14 00:00:03,156 [INFO] LoadServerUpdatesThread:375 - End of LoadServerUpdate Thread
+2024-12-14 00:00:03,396 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-12-14 00:00:03,830 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-12-14 00:00:03,837 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-12-14 00:00:54,051 [INFO] WebApp:236 - error found : CONNECTION_TIMED_OUT

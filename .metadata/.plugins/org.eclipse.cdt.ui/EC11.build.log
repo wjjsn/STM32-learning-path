@@ -1,0 +1,17 @@
+17:32:53 **** Incremental Build of configuration Debug for project EC11 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/User/OLED.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/User/OLED.d" -MT"Core/Src/User/OLED.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/User/OLED.o"
+arm-none-eabi-gcc -o "EC11.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\28584\workspace\EC11\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EC11.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+已结束构建目标： EC11.elf
+ 
+arm-none-eabi-size  EC11.elf 
+arm-none-eabi-objdump -h -S EC11.elf  > "EC11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11968	   2752	   2056	  16776	   4188	EC11.elf
+已结束构建： default.size.stdout
+ 
+已结束构建： EC11.list
+ 
+
+17:32:54 Build Finished. 0 errors, 0 warnings. (took 811ms)
+

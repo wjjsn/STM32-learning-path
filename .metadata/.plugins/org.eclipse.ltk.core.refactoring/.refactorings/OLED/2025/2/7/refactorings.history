@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将资源“OLED/Drivers/User/Src/OLED”重命名为“OLED.c”" description="重命名资源“OLED”" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/User/Src/OLED" name="OLED.c" stamp="1739627057594" updateReferences="true"/>
+</session>

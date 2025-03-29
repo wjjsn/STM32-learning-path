@@ -1,0 +1,10 @@
+17:30:52 **** 构建 of configuration Debug for project HID Keyboard ****
+make -j16 all 
+arm-none-eabi-size  HID\ Keyboard.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28136	    400	   3568	  32104	   7d68	HID Keyboard.elf
+已结束构建： default.size.stdout
+ 
+
+17:30:53 Build Finished. 0 errors, 0 warnings. (took 871ms)
+

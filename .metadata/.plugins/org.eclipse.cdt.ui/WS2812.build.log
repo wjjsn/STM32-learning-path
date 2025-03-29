@@ -1,0 +1,10 @@
+23:12:01 **** Incremental Build of configuration Debug for project ws2812 ****
+make -j16 all 
+arm-none-eabi-size  ws2812.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11132	     12	   3636	  14780	   39bc	ws2812.elf
+已结束构建： default.size.stdout
+ 
+
+23:12:02 Build Finished. 0 errors, 0 warnings. (took 363ms)
+

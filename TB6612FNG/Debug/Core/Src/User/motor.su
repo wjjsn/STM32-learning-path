@@ -1,0 +1,3 @@
+../Core/Src/User/motor.c:10:6:motorSet	24	static
+../Core/Src/User/motor.c:48:6:Set_PWM_Frequency	32	static
+../Core/Src/User/motor.c:67:6:Set_PWM_DutyCycle	24	static

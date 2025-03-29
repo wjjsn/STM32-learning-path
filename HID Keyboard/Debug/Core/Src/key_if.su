@@ -1,0 +1,2 @@
+../Core/Src/key_if.c:11:6:ifkey	16	static
+../Core/Src/key_if.c:224:6:HIDSend	16	static
