@@ -98,18 +98,18 @@ int main(void)
   OLED_showChinese(6, 0, "你好世界");
   OLED_reverse(0, 0, 127, 16);
   OLED_updata();
-//  OLED_animation_down(0);
-//  HAL_Delay(1000);
-//  OLED_animation_down(16);
-//  HAL_Delay(1000);
-//  OLED_animation_down(32);
-//  HAL_Delay(1000);
-//  OLED_animation_up(48);
-//  HAL_Delay(1000);
-//  OLED_animation_up(32);
-//    HAL_Delay(1000);
-//    OLED_animation_up(16);
-//      HAL_Delay(1000);
+  OLED_animation_down(0);
+  HAL_Delay(1000);
+  OLED_animation_down(16);
+  HAL_Delay(1000);
+  OLED_animation_down(32);
+  HAL_Delay(1000);
+  OLED_animation_up(48);
+  HAL_Delay(1000);
+  OLED_animation_up(32);
+    HAL_Delay(1000);
+    OLED_animation_up(16);
+      HAL_Delay(1000);
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -17,9 +17,8 @@
 #define OLED_ADDRESS 0x78
 #define OLED_CHN_CHAR_WIDTH 3
 
-uint8_t DisplayBuf[8][128] = {0};
-uint8_t SendplayBuf[8][1+128+4] = {0};
-const uint8_t dataHead = 0x40;
+uint8_t DisplayBuf1[8][128] = {0};
+uint8_t DisplayBuf2[8][128] = {0};
 
 void OLED_WriteCommand(uint8_t cmd)
 {
@@ -96,19 +95,33 @@ void OLED_chear(void)
 		for (int j = 0; j < 128; ++j)
 		{
 //			OLED_WriteData(0x00);
-			DisplayBuf[i][j] = 0x00;
+			DisplayBuf1[i][j] = 0x00;
 		}
 	}
 }
 
 void OLED_updata()
 {
-	for (int i = 0; i < 8; ++i)
+	uint8_t dataBuf1[8][129]={0};
+	uint8_t dataBuf2[8][129]={0};
+	for (uint8_t i = 0; i < 8; ++i)
 	{
-		uint8_t dataBuf[129]={0x40,0};
-		OLED_SetCursor(i, 0);
-		memcpy(dataBuf+1, DisplayBuf[i], 128);
-		HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDRESS, dataBuf, 129, HAL_MAX_DELAY);
+		dataBuf1[i][0]=0x40;
+		dataBuf2[i][0]=0x40;
+	}
+	for (uint8_t i = 0; i < 8; ++i)
+	{
+		memcpy( (&dataBuf1[i][0])+1, DisplayBuf1[i], 128);
+		memcpy( (&dataBuf2[i][0])+1, DisplayBuf2[i], 128);
+	}
+	for (uint8_t i = 0; i < 8; ++i)
+	{
+		if(memcmp(&dataBuf1[i][0],&dataBuf2[i][0],129) != 0)
+		{
+			OLED_SetCursor(i, 0);
+			HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDRESS, &dataBuf1[i][0], 129, HAL_MAX_DELAY);
+			memcpy(DisplayBuf2[i], DisplayBuf1[i], 128);
+		}
 	}
 }
 
@@ -125,7 +138,7 @@ void OLED_reverse(uint8_t X, uint8_t Y, uint8_t Width, uint8_t Height)
 	{
 		for (i = X; i < X + Width; i ++)	//遍历指定列
 		{
-			DisplayBuf[j / 8][i] ^= 0x01 << (j % 8);	//将显存数组指定数据取反
+			DisplayBuf1[j / 8][i] ^= 0x01 << (j % 8);	//将显存数组指定数据取反
 		}
 	}
 }
@@ -181,7 +194,7 @@ void OLED_showImage(uint8_t Page, uint8_t X, uint8_t Width, uint8_t Height,uint8
 		for (int i = 0; i < Width; ++i)
 		{
 //			OLED_WriteData(Image[Width*j+i]);
-			DisplayBuf[Page+j][X+i] = Image[Width*j+i];
+			DisplayBuf1[Page+j][X+i] = Image[Width*j+i];
 		}
 	}
 }
