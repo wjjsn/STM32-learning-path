@@ -7,7 +7,7 @@
 
 #include "motor.h"
 
-void motorSet(uint8_t motor, uint8_t dir, uint8_t speed)
+void motorSet(uint8_t motor, uint8_t dir, uint16_t speed)
 {
 	GPIO_PinState in1, in2;
 	switch(dir)
