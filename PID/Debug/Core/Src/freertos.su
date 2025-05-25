@@ -1,0 +1,9 @@
+../Core/Src/freertos.c:165:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:238:6:StartDefaultTask	16	static
+../Core/Src/freertos.c:256:6:StartOLEDupdateTask	16	static
+../Core/Src/freertos.c:277:6:StartReadADCTask	16	static
+../Core/Src/freertos.c:297:6:StartSstMotorTask	16	static
+../Core/Src/freertos.c:320:6:StartUSART1Task	16	static
+../Core/Src/freertos.c:345:6:StartPIDupdateTask	24	static
+../Core/Src/freertos.c:372:6:StartGetEncoderTask	16	static
+../Core/Src/freertos.c:397:6:StartCopeKeyTask	24	static

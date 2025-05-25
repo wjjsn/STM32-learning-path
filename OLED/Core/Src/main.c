@@ -92,8 +92,8 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   OLED_init();
-  OLED_showChinese(0, 0, "你好世界");
-  OLED_showChinese(2, 0, "你好世界");
+  OLED_showChinese(0, 0, "你好世界你好世界");
+  OLED_showString(2, 0,"abcde",8);
   OLED_showChinese(4, 0, "你好世界");
   OLED_showChinese(6, 0, "你好世界");
   OLED_reverse(0, 0, 127, 16);

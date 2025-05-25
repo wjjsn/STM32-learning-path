@@ -1,0 +1,2 @@
+../Core/Src/User/Keyboard_Driver.c:12:6:ifkey	16	static
+../Core/Src/User/Keyboard_Driver.c:227:6:HIDSend	16	static

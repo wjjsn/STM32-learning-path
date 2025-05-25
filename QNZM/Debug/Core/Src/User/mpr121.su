@@ -1,0 +1,5 @@
+../Core/Src/User/mpr121.c:19:9:mpr121_init	24	static
+../Core/Src/User/mpr121.c:60:6:setThresholds	24	static
+../Core/Src/User/mpr121.c:70:10:touched	32	static
+../Core/Src/User/mpr121.c:76:9:readRegister8	40	static
+../Core/Src/User/mpr121.c:84:6:writeRegister	40	static

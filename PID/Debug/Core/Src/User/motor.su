@@ -1,0 +1,2 @@
+../Core/Src/User/motor.c:10:6:motorSet	24	static
+../Core/Src/User/motor.c:48:6:Set_PWM_DutyCycle	16	static

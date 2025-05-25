@@ -18,13 +18,16 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
 #include "i2c.h"
+#include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include <stdlib.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint16_t dmadata=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -88,12 +91,15 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USB_DEVICE_Init();
   MX_I2C1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   OLED_init();
   mpr121_init();
   char buffer[11];
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,8 +108,13 @@ int main(void)
   {
 	  uint16_t data = touched();
 
+	  HAL_I2C_Mem_Read_DMA(&hi2c1, MPR121_I2CADDR_DEFAULT, MPR121_TOUCHSTATUS_L, I2C_MEMADD_SIZE_8BIT, (uint8_t*)&dmadata, 1);
+	  HAL_Delay(50);
+	  printf("%d\n", dmadata);
+//	  printf("为了解决神秘bug而诞生了这一行\n");
 	  sprintf(buffer, "%ld    ", data);
-	  OLED_showString(8, 8, buffer, 8);
+//	  OLED_showString(8, 8, buffer, 8);
+//	  HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -158,7 +169,42 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+int _write(int fd, char *buffer, int len)
+{
+    HAL_UART_Transmit(&huart1, (uint8_t*)buffer, len, 1000);
+    return len;
+}
+int fputc(int ch, FILE *f)
+{
+	HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 1000);
+	return ch;
+}
 
+
+void HAL_I2C_MemRxCpltCallback(I2C_HandleTypeDef *hi2c)
+{
+//	static uint8_t mpr121_address_index[1];
+	static uint8_t count;
+	static uint8_t databuf_H;
+	static uint8_t databuf_L;
+	static uint8_t mpr121_mem_index[2]={MPR121_TOUCHSTATUS_H, MPR121_TOUCHSTATUS_L};
+	if(hi2c==&hi2c1)
+	{
+		switch(count)
+		{
+			case 0:
+				HAL_I2C_Mem_Read_DMA(&hi2c1, MPR121_I2CADDR_DEFAULT, MPR121_TOUCHSTATUS_H, I2C_MEMADD_SIZE_8BIT, &databuf_H, 1);
+				count=1;
+				break;
+			case 1:
+				HAL_I2C_Mem_Read_DMA(&hi2c1, MPR121_I2CADDR_DEFAULT, MPR121_TOUCHSTATUS_L, I2C_MEMADD_SIZE_8BIT, &databuf_L, 1);
+				count=0;
+				break;
+		}
+		dmadata=( databuf_H<<8 | databuf_L );
+
+	}
+}
 /* USER CODE END 4 */
 
 /**

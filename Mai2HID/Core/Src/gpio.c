@@ -49,19 +49,13 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-  /*Configure GPIO pins : BT1_Pin BT3_Pin BT4_Pin SERVER_Pin
-                           TEST_Pin HOME_Pin BT8_Pin */
-  GPIO_InitStruct.Pin = BT1_Pin|BT3_Pin|BT4_Pin|SERVER_Pin
-                          |TEST_Pin|HOME_Pin|BT8_Pin;
+  /*Configure GPIO pins : BT1_Pin BT2_Pin BT3_Pin BT4_Pin
+                           SERVER_Pin TEST_Pin HOME_Pin BT8_Pin */
+  GPIO_InitStruct.Pin = BT1_Pin|BT2_Pin|BT3_Pin|BT4_Pin
+                          |SERVER_Pin|TEST_Pin|HOME_Pin|BT8_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : BT2_Pin */
-  GPIO_InitStruct.Pin = BT2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(BT2_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : BT5_Pin BT6_Pin BT7_Pin COIN_Pin */
   GPIO_InitStruct.Pin = BT5_Pin|BT6_Pin|BT7_Pin|COIN_Pin;

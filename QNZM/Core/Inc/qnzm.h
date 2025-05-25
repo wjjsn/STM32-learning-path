@@ -1,0 +1,88 @@
+/*
+ * qnzm.h
+ *
+ *  Created on: May 10, 2025
+ *      Author: 28584
+ */
+
+#ifndef INC_QNZM_H_
+#define INC_QNZM_H_
+
+
+#include "mpr121.h"
+
+enum {
+    // 设备1 (0x5A) 的通道
+    TOUCH1_TRIG = 103,//[
+    TOUCH1_RELEASE = 104,
+    TOUCH2_TRIG = 113,//'
+    TOUCH2_RELEASE = 114,
+    TOUCH3_TRIG = 111,//;
+    TOUCH3_RELEASE = 112,
+    TOUCH4_TRIG = 121,///
+    TOUCH4_RELEASE = 122,
+    TOUCH5_TRIG = 119,//.
+    TOUCH5_RELEASE = 120,
+    TOUCH6_TRIG = 47,//p
+    TOUCH6_RELEASE = 48,
+    TOUCH7_TRIG = 45,//o
+    TOUCH7_RELEASE = 46,
+    TOUCH8_TRIG = 39,//l
+    TOUCH8_RELEASE = 40,
+    TOUCH9_TRIG = 37,//k
+    TOUCH9_RELEASE = 38,
+    TOUCH10_TRIG = 117,//,
+    TOUCH10_RELEASE = 118,
+    TOUCH11_TRIG = 41,//m
+    TOUCH11_RELEASE = 42,
+    TOUCH12_TRIG = 33,//i
+    TOUCH12_RELEASE = 34,
+    
+    // 设备2 (0x5C) 的通道
+    TOUCH13_TRIG = 57,//u
+    TOUCH13_RELEASE = 58,
+    TOUCH14_TRIG = 35,//j
+    TOUCH14_RELEASE = 36,
+    TOUCH15_TRIG = 31,//h
+    TOUCH15_RELEASE = 32,
+    TOUCH16_TRIG = 43,//n
+    TOUCH16_RELEASE = 44,
+    TOUCH17_TRIG = 19,//b
+    TOUCH17_RELEASE = 20,
+    TOUCH18_TRIG = 65,//y
+    TOUCH18_RELEASE = 66,
+    TOUCH19_TRIG = 55,//t
+    TOUCH19_RELEASE = 56,
+    TOUCH20_TRIG = 29,//g
+    TOUCH20_RELEASE = 30,
+    TOUCH21_TRIG = 27,//f
+    TOUCH21_RELEASE = 28,
+    TOUCH22_TRIG = 59,//v
+    TOUCH22_RELEASE = 60,
+    TOUCH23_TRIG = 21,//c
+    TOUCH23_RELEASE = 22,
+    TOUCH24_TRIG = 51,//r
+    TOUCH24_RELEASE = 52,
+    
+    // 设备3 (0x5D) 的通道
+    TOUCH25_TRIG = 25,//e
+    TOUCH25_RELEASE = 26,
+    TOUCH26_TRIG = 23,//d
+    TOUCH26_RELEASE = 24,
+    TOUCH27_TRIG = 53,//s
+    TOUCH27_RELEASE = 54,
+    TOUCH28_TRIG = 63,//x
+    TOUCH28_RELEASE = 64,
+    TOUCH29_TRIG = 67,//z
+    TOUCH29_RELEASE = 68,
+    TOUCH30_TRIG = 61,//w
+    TOUCH30_RELEASE = 62,
+    TOUCH31_TRIG = 49,//q
+    TOUCH31_RELEASE = 50,
+    TOUCH32_TRIG = 17,//a
+    TOUCH32_RELEASE = 18
+};
+
+void Transmit_Touch_Data(const mpr121_t *mpr121);
+
+#endif /* INC_QNZM_H_ */

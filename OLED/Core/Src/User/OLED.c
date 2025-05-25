@@ -12,20 +12,21 @@
  *      Author: Administrator
  */
 #include "OLED.h"
-#include "string.h"
+
 
 #define OLED_ADDRESS 0x78
 #define OLED_CHN_CHAR_WIDTH 3
 
 uint8_t DisplayBuf1[8][128] = {0};
 uint8_t DisplayBuf2[8][128] = {0};
+uint8_t dataBuf1[8][129]={0};
+uint8_t dataBuf2[8][129]={0};
+uint8_t CommandBuffer[2]={0x00};
 
 void OLED_WriteCommand(uint8_t cmd)
 {
-	uint8_t sendBuffer[2];
-	sendBuffer[0]=0x00;
-	sendBuffer[1]=cmd;
-	HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDRESS, sendBuffer, 2, HAL_MAX_DELAY);
+	CommandBuffer[1]=cmd;
+	HAL_I2C_Master_Transmit(&hi2c1, OLED_ADDRESS, CommandBuffer, 2, HAL_MAX_DELAY);
 }
 
 void OLED_WriteData(uint8_t dat)
@@ -85,6 +86,11 @@ void OLED_init(void)
 
 	OLED_WriteCommand(0xAF);	//开启显示
 	OLED_chear();
+	for (uint8_t i = 0; i < 8; ++i)
+	{
+		dataBuf1[i][0]=0x40;
+		dataBuf2[i][0]=0x40;
+	}
 }
 
 void OLED_chear(void)
@@ -102,13 +108,6 @@ void OLED_chear(void)
 
 void OLED_updata()
 {
-	uint8_t dataBuf1[8][129]={0};
-	uint8_t dataBuf2[8][129]={0};
-	for (uint8_t i = 0; i < 8; ++i)
-	{
-		dataBuf1[i][0]=0x40;
-		dataBuf2[i][0]=0x40;
-	}
 	for (uint8_t i = 0; i < 8; ++i)
 	{
 		memcpy( (&dataBuf1[i][0])+1, DisplayBuf1[i], 128);

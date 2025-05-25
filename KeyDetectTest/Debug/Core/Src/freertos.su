@@ -1,0 +1,7 @@
+../Core/Src/freertos.c:167:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:241:6:StartDefaultTask	16	static
+../Core/Src/freertos.c:259:6:StartKeyClickTask	24	static
+../Core/Src/freertos.c:321:6:StartKeyDbclickTask	24	static
+../Core/Src/freertos.c:391:6:StartKeyHoldTask	24	static
+../Core/Src/freertos.c:427:6:StartDisplayTask	32	static
+../Core/Src/freertos.c:451:6:StartCopeKeyStateTask	32	static

@@ -1,25 +1,29 @@
-13:46:09 **** Incremental Build of configuration Debug for project mpr121 ****
+01:33:35 **** Incremental Build of configuration Debug for project mpr121 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:30: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
-  105 |           sprintf(buffer, "%ld    ", data);
+../Core/Src/main.c:115:30: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'int' [-Wformat=]
+  115 |           sprintf(buffer, "%ld    ", data);
       |                            ~~^       ~~~~
       |                              |       |
       |                              |       int
       |                              long int
       |                            %d
+../Core/Src/main.c: In function 'HAL_I2C_MemRxCpltCallback':
+../Core/Src/main.c:190:24: warning: unused variable 'mpr121_mem_index' [-Wunused-variable]
+  190 |         static uint8_t mpr121_mem_index[2]={MPR121_TOUCHSTATUS_H, MPR121_TOUCHSTATUS_L};
+      |                        ^~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "mpr121.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\28584\workspace\mpr121\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mpr121.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 已结束构建目标： mpr121.elf
  
 arm-none-eabi-size  mpr121.elf 
 arm-none-eabi-objdump -h -S mpr121.elf  > "mpr121.list"
    text	   data	    bss	    dec	    hex	filename
-  39288	   3120	   6536	  48944	   bf30	mpr121.elf
+  48036	    472	   6752	  55260	   d7dc	mpr121.elf
 已结束构建： default.size.stdout
  
 已结束构建： mpr121.list
  
 
-13:46:10 Build Finished. 0 errors, 1 warnings. (took 1s.15ms)
+01:33:36 Build Finished. 0 errors, 2 warnings. (took 1s.228ms)
 
